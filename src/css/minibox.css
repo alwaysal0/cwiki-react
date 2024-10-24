@@ -1,0 +1,120 @@
+#minibox-with-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 5px 8px rgb(193, 193, 193);
+    height: max-content;
+    padding: 50px;
+    border-radius: 15px;
+    margin: auto;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.5s ease-in-out, transform 0.2s ease-out;
+}
+#minibox-with-icons.in-view{
+    opacity: 1;
+    transform: scale(1);
+}
+#minibox-with-icons img{
+    width: 200px;
+}
+#minibox-name{
+    text-align: center;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 350;
+    color: #303030;
+}
+#obertkaForIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-right: 80px;
+}
+#obertkaForIcons p{
+    color: #303030;
+    font-size: 17px;
+}
+#laptop{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    padding-right: 50px;
+}
+#laptop img{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+#laptop:hover img{
+    filter: grayscale(0);
+    transition: .5s;
+    transform: scale(1.02);
+}
+#time{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+#time img{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+#time:hover img{
+    filter: grayscale(0);
+    transition: .5s;
+    transform: scale(1.02);
+}
+#brain{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+#brain img{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+#brain:hover img{
+    filter: grayscale(0);
+    transition: .5s;
+    transform: scale(1.02);
+}
+#smile{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#smile img{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+#smile:hover img{
+    filter: grayscale(0);
+    transition: .5s;
+    transform: scale(1.02);
+}
+#prosloyka{
+    width: 5px;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.142);
+}

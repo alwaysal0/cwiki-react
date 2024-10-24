@@ -1,0 +1,60 @@
+{
+
+    ".":"HEADER",
+
+    "main": "MAIN",
+    "start": "START",
+    "libraries": "LIBRARIES",
+    "course": "COURSE",
+    "wiki": "WIKI",
+
+    "..":"MAIN--BOX",
+
+    "its-easy": " - it`s easy",
+    "its-not-scary": "it's not as scary as it seems",
+    "our-guide": "our guide will help with that",
+    "you`ll-find": "YOU`LL FIND",
+    "online-code-editor": "Online code editor",
+    "brief-overview-of-libraries": "Brief overview of libraries",
+    "even-beginners-will-understand": "Even beginners`ll understand",
+    "online-compiler": "Online compiler",
+
+    "...":"INFORMATION--ABOUT--C",
+
+    "history-of": "History of ",
+    "above-the-language": "Above the language",
+    "first-part-of-text": "from 1969 to 1973, engineers Ken Thompson and Dennis Ritchie from the American company Bell Labs worked on this. Before that, high-level programming languages were very limited and didn't allow for many things that have become common today. Developers had to write many functions in assembly language or at the machine code level. This approach slowed down development and required deep knowledge of how the hardware worked.",
+    "second-part-of-text": "According to one legend, Ritchie had a favorite computer game that he used to run on the company’s server. He wanted to transfer the game to his personal workstation, but it didn't have an operating system. As a result, he decided to rewrite the existing OS, which was entirely written in assembly language, using the high-level language B. However, it turned out that B's capabilities were insufficient to fully utilize the computer's features, so it was decided to create a new programming language. This is how C was born.",
+    "third-part-of-text": "The C language became popular primarily due to its widespread use in the UNIX operating system, on which Linux distributions are based.",
+
+    "4":"MINIBOX-WITH-ICONS",
+
+    "what-you-need":"WHAT DO YOU NEED",
+    "pc-or-laptop":"PC or Laptop",
+    "a-lot-of-your-time":"A lot of yout Time",
+    "patience":"patience",
+    "positive-attitude":"Positive attitude",
+    "and-a-bit-of-brains":"And a bit of Brains",
+
+    "5":"MINIBOX-WITH-ICONS",
+
+    "hello-world":" 'Hello World' - on ",
+    "how-it-looks-like":"This is what the code looks like: 'Hello World!'",
+    "by-the-way":"by the way, this is an active PHOTO, try the code yourself",
+    "compiling-our-file":"We are compiling our file here",
+    "active":"(ACTIVE)",
+    "execution-code":"This is the execution of our code",
+    "easy":"Isn't it easy?",
+    "press":"Press ",
+    "guide-below":" read the guide for beginners below.",
+
+    "6":"FOOTER",
+    
+    "language-C":"Language C",
+    "code-editor":"Code Editor",
+    "compiler":"Compiler",
+    "writing-logic":"Writing Logic",
+    "first-program":"First Program",
+    "more":"MORE",
+    "development":"The website is under DEVELOPMENT"
+}
