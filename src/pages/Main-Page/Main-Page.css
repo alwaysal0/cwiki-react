@@ -1,0 +1,54 @@
+#hole-page{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: max-content;
+    width: 100%;
+}
+#Main-box{
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+#information-about-C{
+    background-image: url("./c-animation2/frame1.png");
+    width: 100vw;
+    height: 100vh;
+    transition: background-image .05s ease-in-out;
+    color: #303030;
+    font-size: 20px;
+    display: flex;
+}
+#uWillNeed{
+  width: 80vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#first-Program{
+  width: 100vw;
+  margin-bottom: 100px;
+}
+/* #footer{
+    margin-top: auto;
+    height: max-content;
+    background-color: #00599C;
+    position: relative;
+    display: flex;
+    width: 100vw;
+  } */
+  
+  /*-----MEDIA-----*/
+  @media (max-width:750px){  
+    #Main-box{
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 150px;
+    } 
+    #uWillNeed{
+      display: none;
+    }
+  }
