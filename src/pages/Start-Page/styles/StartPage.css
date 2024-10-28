@@ -1,0 +1,36 @@
+#lets-start {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+#circle-test{
+    background-color: #00599C;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    opacity: 1;
+    transition: opacity .5s ease-in-out, trasnform 30s ease;
+}
+#circle-test.in-view{
+    transform: scale(40);
+    opacity: 1;
+}
+#main-text {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#main-text.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}

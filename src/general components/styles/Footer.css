@@ -1,0 +1,118 @@
+#main-Obertka-Footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00599C;
+    width: 100VW;
+
+}
+#mini-Obertka-Footer{
+ margin-top: auto;
+    height: max-content;
+    position: relative;
+    display: flex;
+}
+.head-of-list{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.head-of-list:hover{
+    text-decoration: underline 1px white;
+}
+.list{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+}
+#footer-start{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: max-content;
+}
+#footer-start ul{
+    list-style: none;
+    padding: 0;
+}
+#footer-start a:hover{
+    text-decoration: underline 1px white;
+}
+#footer-libraries{
+    margin-left: 50px;
+    margin-top: 10px;
+    width: max-content;
+}
+#footer-libraries ul{
+    list-style: none;
+    padding: 0;
+}
+#footer-libraries a:hover{
+    text-decoration: underline 1px white;
+}
+#footer-contact{
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+#footer-contact a{
+    color: white;
+}
+#contact{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#copyright{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+#footer-contact p{
+    margin: 0;
+}
+#github {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .5s;
+}
+#github:hover img {
+    filter: brightness(0.9);
+}
+#github img {
+    width: 45px
+}
+@media (max-width: 750px) {
+    #main-Obertka-Footer{
+        width: 105vw;
+    }
+    #copyright{
+        position: relative;
+    }
+}
+@media (max-width: 500px) {
+    #main-Obertka-Footer{
+        width: 102vw;
+        position: relative;
+        margin-top: auto;
+    }
+    #footer-start{
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    #footer-libraries{
+        margin:0;
+        align-self: center;
+        text-align: center;
+    }
+    #footer-contact{
+        position: relative;
+        right: -30px;
+        margin-bottom: 20px;
+    }
+}

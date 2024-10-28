@@ -1,0 +1,160 @@
+/*------------------------HEADER------------------------*/
+#header{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.444);
+  align-items: center;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.523);
+  backdrop-filter: blur(10px);
+  height: max-content;
+  opacity: 1;
+  position: sticky;
+}
+#header img{
+  width: 65px;
+  margin-left: 10px;
+}
+#header p{
+  color: #00599C;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+#logo-name{
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+#right-head{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#right-head{
+  transition: opacity 0.5s ease-in-out;
+}
+#right-head div{
+  padding-right: 50px;
+}
+.rightButtons a{
+  text-decoration: none;
+  color: #00599C;
+  font-weight: 550;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  transition: 0.5;
+}
+.rightButtons:hover{
+  text-decoration: underline 1.5px #00599C;
+  transition: 0.5s;
+}
+#div-of-language{
+  position: relative;
+  cursor: pointer;
+}
+#language span{
+  color: #013f6e;
+  font-weight: 600;
+  font-size: 19px;
+}
+#list-of-languages{
+  list-style: none;
+  position: absolute;
+  padding: 0px;
+  cursor: pointer;
+  display: none;
+  top: 10px;
+  right: 52%;
+  background-color: rgba(255, 255, 255, 0);
+}
+#list-of-languages.list-visible{
+  display: block;
+}
+#list-of-languages li{
+  padding-top: 5px;
+  margin-right: 27px;
+}
+#list-of-languages p{
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.176);
+  border-radius: 15px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+
+}
+#lastLi{
+  padding-bottom: 15px;
+}
+
+/*------------------------MEDIA------------------------*/
+@media(max-width: 750px) {
+  #right-head div{
+    padding-right: 10px;
+  }
+  #list-of-languages{
+    right: -15px;
+  }
+}
+@media (min-width: 600px){
+  #hamburger{
+      display: none;
+  }
+}
+/*Header*/
+@media (max-width:500px){
+  #header{
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2,220px);
+    justify-content: center;
+    align-items: center;
+  }
+  #hamburger{
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 208px;
+  }
+  #hamburger.active{
+    transform: rotate(180deg);
+    align-items: flex-start;
+  }
+  #photo-hamburger.active{
+    transform: rotate(180deg);
+  }
+  #logo-name{
+    width: 50vw;
+  }
+  #right-head{
+    display: flex;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #right-head.active{
+    display: block;
+    display: flex;
+  }
+  #right-head div{
+    padding: 15px;
+}
+  #list-of-languages{
+    top: 40px;
+  }
+  #list-of-languages p{
+    width: 100px;
+  }
+  #list-of-languages li{
+    padding-top: 5px;
+    margin-left: 60%;
+  }
+}
