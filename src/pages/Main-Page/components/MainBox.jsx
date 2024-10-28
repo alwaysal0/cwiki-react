@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../styles/MainBox.css'
+import { Link } from 'react-router-dom';
 
 function MainBox() {
   const observedElementsRef = useRef([]); // Инициализация массива рефов
@@ -59,7 +60,8 @@ function MainBox() {
         <p ref={setObservedElementRef} id="c-easy"><span>С</span>{t("its-easy")}</p>
         <p id="rest-of-text"><span ref={setObservedElementRef} id="rest-of-text-first">{t("its-not-scary")}</span>
         <br /><span ref={setObservedElementRef} id="rest-of-text-last">{t("our-guide")}</span></p>
-        <a ref={setObservedElementRef} id="start-button" href="./start-page/start.html">START</a>
+        {/* <a ref={setObservedElementRef} id="start-button" href="./start-page/start.html"><Link to="/start">START</Link></a> */}
+        <Link to ="/start" id='start-button' ref={setObservedElementRef}>START</Link>
       </div>
       <div id="right-images">
         <p ref={setObservedElementRef} id="will-find">{t("you`ll-find")}</p>

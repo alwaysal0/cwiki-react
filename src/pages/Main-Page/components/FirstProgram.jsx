@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../styles/FirstProgram.css'
+import { Link } from 'react-router-dom';
 
 function FirstProgram() {
   const observedElementsRef = useRef([]); // Инициализация массива рефов
@@ -74,7 +75,7 @@ function FirstProgram() {
             <div ref={setObservedElementRef} id="arrow-bottom">
                 <img src="../Images/arrow-bottom.png" alt="arrow-bottom" />
             </div>
-            <div id="for-start-button"><a ref={setObservedElementRef} id="start-button-second" href="#">START</a></div>
+            <div id="for-start-button"><Link ref={setObservedElementRef} id="start-button-second" to="/start">START</Link></div>
         </div>
     </>
   )
