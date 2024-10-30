@@ -1,0 +1,137 @@
+#hello-world-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex; justify-content: space-around; flex-direction: column;
+    overflow: hidden;
+}
+#hello-world-main-text{
+    color: #303030;
+    font-size: 35px;
+    text-align: center;
+}
+#hello-world-main-text code{
+    background-color: rgb(242, 242, 242);
+    padding: 5px;
+    border-radius: 10px;
+}
+#hello-world-main-text span{
+    color: #00599C;
+    font-size: 45px; font-weight: 600;
+    
+}
+#hello-world-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    align-items: center;
+}
+#hello-world-code{
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.247);
+    width: max-content; height: max-content;
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    opacity: 0; transform: scale(2); transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#hello-world-code.in-view{
+    opacity: 1; transform: scale(1);
+}
+#hello-world-code-head{
+    color: #00599C;
+    font-size: 40px;
+    font-weight: 400;
+}
+#hello-world-code-body{
+    background-color: rgb(242, 242, 242);
+    height: max-content; width: max-content;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+#p1{
+    color: rgb(3, 183, 183);
+}
+#include{
+    color: purple;
+}
+#stdioh{
+    color: rgb(51, 152, 26);
+}
+#p2{
+    color: #00599C;
+}
+#int{
+    color: purple;
+}
+#main{
+    color: #00599C;
+}
+#p3{
+    color: rgb(3, 183, 183);
+}
+#a{
+    color: #303030;
+}
+#char{
+    color: purple;
+}
+#hello-world-span{
+    color: rgb(51, 152, 26);
+}
+#p4{
+    color: rgb(3, 183, 183);
+}
+#printf{
+    color: #00599C;
+}
+#s{
+    color: #303030;
+}
+#p5{
+    color: #00599C;
+}
+#brackets{
+    color: rgb(3, 183, 183);
+}
+#hello-world-explanation{
+    width: 65vw;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    opacity: 0; transform: translateX(300px); transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#hello-world-explanation.in-view{
+    opacity: 1; transform: translateX(0);
+}
+#hello-world-explanation-head{
+    font-size: 30px;
+    color: #303030;
+    text-align: center;
+}
+#hello-world-explanation-body{
+    font-size: 20px;
+    line-height: 40px;
+    color: #303030;
+}
+#hello-world-explanation-body code{
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#intrested{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.otherLinks{
+    text-decoration: none;
+    color: #00599C;
+}
+.otherLinks:hover{
+    text-decoration: underline 1px #00599C;
+}

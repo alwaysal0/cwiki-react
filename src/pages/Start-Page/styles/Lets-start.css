@@ -1,0 +1,197 @@
+#lets-start {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+}
+#space{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+#circle-top-left{
+    background-color: #00599C;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    animation: circleAnimation .3s forwards ease-in-out;
+}
+#circle-top-right{
+    background-color: #00599C;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    animation: circleAnimation .3s forwards ease-in-out;
+}
+@keyframes circleAnimation {
+
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(50);
+        opacity: 1;
+    } 
+}
+#lets-get-started{
+    opacity: 0;
+    transform: scale(0.2);
+    transition: opacity .5s ease-in-out, transform .3s ease-in-out;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    font-weight: 200;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lets-get-started.in-view{
+    opacity: 1;
+    transform: scale(1);
+}
+#main-text {
+    z-index: 1;
+}
+#history-denis{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+#infoC{
+    color: #303030;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 55vw;
+    height: max-content;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.449);
+    margin-top: 5vh;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity .5s ease-in-out, transform .3s ease-in-out;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#infoC.in-view{
+    transform: translateX(0);
+    opacity: 1;
+}
+#history-origin{
+    margin-left: 5vw;
+    font-size: 35px;
+    color: #00599C;
+    font-weight: 400;
+}
+#history {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#history span{
+    padding: 5px;
+}
+#history.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#denis{
+    z-index: 1;
+    opacity: 0;
+    margin-right: 2.5vw;
+    transform: translateX(250px);
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#denis.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#denis img{
+    width: 425px;
+    filter: grayscale(80%);
+}
+#circle-dennis{
+    background-color: #ffffff;
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.145);
+    animation: circleDennis .4s forwards ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes circleDennis {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(25);
+    }
+}
+#dennis-typewrite {
+    padding: 5px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    font-size: 30px;
+    border-right: 2px solid #00599C;
+    overflow: hidden; /* Скрываем лишний текст */
+    border-right: 3px solid; /* Курсор */
+    white-space: nowrap; /* Не переносить строки */
+    width: 0; /* Начальная ширина */
+    animation: typing 4s steps(30) forwards, blink-caret 0.75s step-end infinite; /* Анимация набирания и мигания курсора */
+}
+#char{
+    color: rgb(137, 37, 137);
+}
+#brackets{
+    color: rgb(255, 0, 128);
+}
+#dennis-span{
+    color: #00599C;
+}
+@keyframes typing {
+    from {
+        width: 0; /* Начинаем с ширины 0 */
+    }
+    to {
+        width: 97%; /* Увеличиваем ширину до полной */
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Курсор невидим */
+    }
+    50% {
+        border-color: #000000; /* Курсор видим */
+    }
+}
+
+@media (max-width: 750px) {
+
+}
+@media (max-width: 500px) {
+
+}

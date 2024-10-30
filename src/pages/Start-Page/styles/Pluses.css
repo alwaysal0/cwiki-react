@@ -1,0 +1,110 @@
+#pluses-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+}
+#name-of-pluses{
+    color: #00599C;
+    font-size: 50px;
+    margin: 50px;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+#name-of-pluses span{
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: 1vw;
+}
+#name-of-pluses.in-view{    
+    opacity: 1;
+}
+#line-of-pluses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pluses{
+    width: 225px; height: 350px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.314);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.pluses p{
+    margin: 0;
+}
+.heads{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.pluses img{
+    width: 150px;
+}
+
+#plus1{
+    opacity: 0;
+    transform: translateX(400px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#plus1.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#plus2{
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#plus2.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#plus3{
+    opacity: 0;
+    transform: scale(0.2);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#plus3.in-view{
+    opacity: 1;
+    transform: scale(1);
+}
+#plus4{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out; 
+}
+#plus4.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#plus5{
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;  
+}
+#plus5.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#features-of-pluses{
+    font-size: 22px;
+    margin-bottom: 5vw;
+}
+#features-of-pluses span{
+    color: #00599C;
+    font-size: 35px;
+    font-weight: 600;
+}
