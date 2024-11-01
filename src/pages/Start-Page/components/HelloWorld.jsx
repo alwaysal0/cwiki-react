@@ -43,7 +43,7 @@ function HelloWorld() {
                     </div>
                 </div>
             </div>
-            <div id="intrested">{t("intrested1")}<a className="otherLinks" href="#">&lt;{t("libraries")}&gt;</a>&nbsp;<a className="otherLinks" href="#">&lt;{t("course")}&gt;</a>{t("intrested2")}</div>
+            <div id="intrested">{t("intrested1")}<a className="otherLinks" href="#">&lt;{t("libraries")}&gt;</a>&nbsp;<a className="otherL  inks" href="#">&lt;{t("course")}&gt;</a>{t("intrested2")}</div>
         </div>
         </>
     )

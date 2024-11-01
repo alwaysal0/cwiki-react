@@ -7,11 +7,11 @@ import './styles/Header.css'
 import { Link, useNavigate } from 'react-router-dom';
 
 function Header() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-    const handleClick = () => {
-        navigate('/start'); // Перенаправляем на страницу "Старт"
-    };
+  //   const handleClick = () => {
+  //       navigate('/start'); // Перенаправляем на страницу "Старт"
+  //   };
   // translator
   const { t, i18n } = useTranslation(); // получаем функции для перевода и смены языка
 

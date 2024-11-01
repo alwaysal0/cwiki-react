@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    overflow: scroll;
 }
 #name-of-pluses{
     color: #00599C;
@@ -107,4 +106,56 @@
     color: #00599C;
     font-size: 35px;
     font-weight: 600;
+}
+@media (max-width: 750px){
+    #pluses-div{
+        height: max-content;
+
+    }
+    #line-of-pluses{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #plus1{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #plus2{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #plus3{
+        opacity: 1;
+        transform: scale(1);
+    }
+    #plus4{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #plus5{
+        opacity: 1;
+        transform: translateX(0);
+        grid-column: 1 / span 2;
+        align-self: center;
+        align-self: center;      /* Вертикальное центрирование */
+        justify-self: center; /*горизонтальное*/
+    }
+    #features-of-pluses{
+        text-align: center;
+        margin-top: 5vw;
+    }
+}
+@media (max-width: 500px){
+    #name-of-pluses{
+        text-align: center;
+    }
+    #line-of-pluses{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 }

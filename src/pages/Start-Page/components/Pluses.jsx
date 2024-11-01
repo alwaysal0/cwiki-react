@@ -23,7 +23,6 @@ function Pluses() {
     const [isInView4, setInView4] = useState(false);
     const [isInView5, setInView5] = useState(false);
     const [isInView6, setInView6] = useState(false);
-    const [isInView7, setInView7] = useState(false);
     const setObservedElementRef = useObserver(setInView1);
     const setObservedElementRef2 = useObserver(setInView2);
     const setObservedElementRef3 = useObserver(setInView3);

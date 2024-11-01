@@ -6,13 +6,7 @@ import Footer from './general components/Footer.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import RouterPages from './router.jsx'
-// createRoot(document.querySelector("header")).render(
-//   <StrictMode>
-//     <BrowserRouter>
-//      <Header />
-//     </BrowserRouter>
-//   </StrictMode>,
-// )
+
 createRoot(document.querySelector("#main-box")).render(
   <StrictMode>
     <BrowserRouter>

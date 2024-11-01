@@ -135,3 +135,73 @@
 .otherLinks:hover{
     text-decoration: underline 1px #00599C;
 }
+
+@media (max-width:750px) {
+    #hello-world-main{
+
+    }
+    #hello-world-main-text{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #hello-world-main{
+        width: 100vw;
+        height: max-content;
+        background-color: white;
+        display: flex; justify-content: space-around; flex-direction: column;
+    }
+    #hello-world-content{
+        flex-direction: column;
+    }
+    #hello-world-content div{
+        margin-bottom: 20px;
+    }
+    #hello-world-code{
+        padding: 15px;
+        border-radius: 15px;
+        opacity: 1;
+        transform: scale(1);
+    }
+    #hello-world-explanation{
+        width: 85vw;
+        border-radius: 15px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #hello-world-code-head{
+        text-align: center;
+    }
+}
+@media (max-width:500px) {
+    #hello-world-main-text{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #hello-world-main{
+        width: 100vw;
+        height: max-content;
+        background-color: white;
+        display: flex; justify-content: space-around; flex-direction: column;
+    }
+    #hello-world-content{
+        flex-direction: column;
+    }
+    #hello-world-content div{
+        margin-bottom: 20px;
+    }
+    #hello-world-code{
+        padding: 15px;
+        border-radius: 15px;
+        opacity: 1;
+        transform: scale(1);
+    }
+    #hello-world-explanation{
+        width: 85vw;
+        border-radius: 15px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #hello-world-code-head{
+        text-align: center;
+    }
+}

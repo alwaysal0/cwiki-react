@@ -60,6 +60,34 @@
 
     "-------------------------------------------------START-PAGE------------------------------------------------------------":"",
 
-    "lets-get-started": "LET'S START"
+    "lets-get-started": "LET'S START",
+    "history&origin": "Origin & History",
+    "history": "The C programming language was developed in the early 1970s at Bell Labs by Dennis Ritchie. It was originally created as a system programming language for developing the Unix operating system. Over the years, C has evolved and influenced many other programming languages, such as C++, C#, and Java.",
+    "history2":" Its enduring legacy is rooted in its efficiency and closeness to hardware, making it a foundational language in computer science.",
+
+    "advantages": "Advantages of the",
+    "head-of-high-perfomance":"High Performance",
+    "high-perfomance": "close to machine code, suitable for system programming.",
+    "head-of-memory-control":"Memory Control",
+    "memory-control": "allows working with pointers and managing memory manually.",
+    "head-of-portability":"Portability",
+    "portability": "C programs can easily be transferred to different platforms.",
+    "head-of-wide-support-and-popularity":"Wide Support and Popularity",
+    "wide-support-and-popularity": "compilers and libraries are available almost everywhere.",
+    "head-of-simplicity-and-structure":"Simplicity and Structure",
+    "simplicity-and-structure": "minimalist syntax and modularity support through functions.",
+    "features1":"These features make ",
+    "features2":" a strong choice for developing operating systems, drivers, and high-performance applications.",
+
+    "on":" on ",
+    "stdio":" - includes the Standard Input Output Library.",
+    "int-main":" - we declare the function \"main\" without arguments \"()\", it begins with \"{\" and ends with \"}\" as well.",
+    "char":" - we declare an array of characters (a string), where a is the name of the array. Each element (letter) occupies its own position in the array.",
+    "printf":" - we print our array to the screen using the printf command, where \"%s\" is the specifier indicating that the argument a passed to the command is a string.",
+    "explanation":"Explanation of Code",
+    "intrested1":"Indeed, it's not difficult! Interested? Visit our other pages ",
+    "intrested2":", where you'll find plenty of interesting and useful information.",
+
+    "standart-libraries":"Standart Libraries"
 }
 

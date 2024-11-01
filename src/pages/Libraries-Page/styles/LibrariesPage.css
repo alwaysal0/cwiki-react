@@ -1,0 +1,18 @@
+#standart-libraries-head {
+    text-align: center;
+    font-size: 35px;
+    color: #303030;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#standart-libraries-head.in-view{
+    opacity: 1;
+    transform: scale(1);
+}
+#standart-libraries-head span{
+    font-size: 45px;
+    color: #00599C;
+    font-weight: 600;
+    padding-left: 1vw;
+}

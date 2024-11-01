@@ -67,6 +67,7 @@
 #history-denis{
     display: flex;
     width: 100vw;
+    height: max-content;
     justify-content: space-between;
     align-items: center;
 }
@@ -91,7 +92,7 @@
     opacity: 1;
 }
 #history-origin{
-    margin-left: 5vw;
+    margin-left: 8vw;
     font-size: 35px;
     color: #00599C;
     font-weight: 400;
@@ -190,8 +191,58 @@
 }
 
 @media (max-width: 750px) {
-
+    #lets-start{    
+        height: max-content;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #circle-top-left{
+        display: none;
+    }
+    #circle-top-right{
+        display: none;
+    }
+    #circle-dennis{
+        display: none;
+    }
+    #lets-get-started{
+        color: #303030;
+    }
+    #history-denis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #infoC{
+        border-radius: 15px;
+        width: 80vw;
+    }
+    #history-origin{
+        text-align: center;
+        margin: 10px;
+    }
+    #history{
+        transition: opacity .3s ease-in-out, transform .2s ease-in-out;
+    }
+    #denis{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #denis img{
+        width: 275px;
+        filter: grayscale(80%);
+    }
+    #dennis-typewrite {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 @media (max-width: 500px) {
-
+    #infoC{
+    }
 }
