@@ -148,6 +148,31 @@
     "for-i-explanation":" — initializes a loop to fill the array with even numbers.",
     "array[i]-explanation":" — assigns the value of the even number to each element of the array.",
     "printf(array[d])-explanation":" — outputs the index and value of each element in the array.",
-    "free(array)-explanation":" — releases the allocated memory back to the system to avoid memory leaks."
+    "free(array)-explanation":" — releases the allocated memory back to the system to avoid memory leaks.",
+
+    "string.h":" library is a standard library in the C language that provides functions for working with strings. It includes functions for string manipulation, comparison, copying, searching for substrings, and calculating string lengths.",
+    "strlen-function":" — calculates the length of a string.",
+    "strcpy-funtion":" — copies one string to another.",
+    "strncpy-function":" — copies a specified number of characters from one string to another.",
+    "strcat-function":" — concatenates (appends) one string to another.",
+    "strcmp-function":" — compares two strings.",
+    "strchr-function":" — searches for the first occurrence of a character in a string.",
+    "strstr-function":" — searches for the first occurrence of a substring in a string.",
+    "example-code-string.h1":"Here’s a simple example of a C program that uses the ",
+    "example-code-string.h2":" library to work with strings:",
+    "1.string.h":" — a preprocessor directive that includes the <string.h> library, allowing the use of its functions for string manipulation.",
+    "2.string.h":" — declaration of character arrays for storing strings. The arrays are sized to hold up to 50 characters.",
+    "3.string.h":" — prompts the user to enter the first string.",
+    "4.string.h":" — reads a string from standard input (keyboard) and stores it in the array \"str1\".",
+    "5.string.h":" — prompts the user to enter the second string.",
+    "6.string.h":" — reads a string from standard input and stores it in the array \"str2\".",
+    "7.string.h":" — removes the newline character from \"str1\" if it exists.",
+    "8.string.h":" — removes the newline character from \"str2\" if it exists.",
+    "9.string.h":" — compares the strings \"str1\" and \"str2\". The function returns 0 if the strings are equal, a negative value if \"str1\" is less than \"str2\", and a positive value if \"str1\" is greater than \"str2\".",
+    "10.string.h":" — outputs the result of the string comparison.",
+    "11.string.h":" — concatenates the strings \"str1\" and \"str2\", appending the contents of \"str2\" to the end of \"str1\".",
+    "12.string.h":" — outputs the result of the concatenation.",
+    "13.string.h":" — outputs the length of \"str1\"."
+
 }
 
