@@ -1,6 +1,16 @@
+#libraries{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#standart-libraries{
+    width: 100vw;
+
+}
 #standart-libraries-head {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: #303030;
     opacity: 0;
     transform: scale(0.1);
@@ -15,4 +25,119 @@
     color: #00599C;
     font-weight: 600;
     padding-left: 1vw;
+}
+#standart-libraries-main-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#libraries-left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    width: 12vw; height: max-content;
+    border-bottom-right-radius: 15px; border-top-right-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.251);
+    padding: 10px;
+    position: sticky;
+    top: 10vh;
+}
+#libraries-right{
+    height: max-content;
+    width: 75vw;
+    padding: 1vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+}
+.list-libraries{
+    text-decoration: none;
+    font-size: 20px;
+    color: #00599C;
+}
+.list-libraries:hover{
+    text-decoration: underline 1px #00599C;
+}
+.headers-of-libraries-right{
+    color: #303030;
+    font-size: 35px;
+    margin-left: 1vw;
+}
+.text-of-libraries-right{
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 1vw;
+}
+#definition li{
+    padding: 5px;
+}
+#definition li::marker{
+    color: rgb(164, 164, 164);
+    font-size: 20px;
+}
+.pre{
+    color: #00599C;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+.head-libraries{
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 20px;
+    color: #00599C;
+}
+.libraries-span{
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000000;
+
+}
+#stdio-h-div li{
+    padding: 5px;
+    line-height: 30px;
+}
+#stdio-h-div li::marker{
+    color: rgb(164, 164, 164);
+    font-size: 20px;
+}
+.functions-span{
+    padding: 5px;
+    line-height: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    color: #00599C;
+    font-size: 18px;
+    font-weight: 500;
+}
+.explanation-span{
+    padding: 5px;
+    line-height: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    color: #4B0082;
+    font-size: 18px;
+    font-weight: 500;
+}
+.example-code{
+    font-size: 25px;
+}
+#gist-embed{
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: inset 0 0 10px #00589c70;
+}
+#stdlib-h-div li{
+    padding: 5px;
+    line-height: 30px;
+}
+#stdlib-h-div li::marker{
+    color: rgb(164, 164, 164);
+    font-size: 20px;
 }
