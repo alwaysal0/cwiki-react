@@ -10,6 +10,9 @@ import Definition from "./components/Definition";
 import Stdioh from "./components/stdioh";
 import Stdlibh from "./components/Stdlibh"
 import Stringh from "./components/Stringh";
+import Mathh from "./components/Mathh";
+import Ctypeh from "./components/Ctypeh";
+import Limitsh from "./components/Limitsh";
 
 function LibrariesPage() {
     // translator
@@ -31,12 +34,9 @@ function LibrariesPage() {
                     <a href="#stdio-h-div" className="list-libraries">&lt;stdio.h&gt;</a>
                     <a href="#stdlib-h-div" className="list-libraries">&lt;stdlib.h&gt;</a>
                     <a href="#string-h-div" className="list-libraries">&lt;string.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;math.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;ctype.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;math.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;assert.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;errno.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;limits.h&gt;</a>
+                    <a href="#math-h-div" className="list-libraries">&lt;math.h&gt;</a>
+                    <a href="#ctype-h-div" className="list-libraries">&lt;ctype.h&gt;</a>
+                    <a href="#limits-h-div" className="list-libraries">&lt;limits.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;float.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;stddef.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;stdint.h&gt;</a>
@@ -59,6 +59,15 @@ function LibrariesPage() {
                     </div>
                     <div id="string-h-div">
                         <Stringh />
+                    </div>
+                    <div id="math-h-div">
+                        <Mathh />
+                    </div>
+                    <div id="ctype-h-div">
+                        <Ctypeh />
+                    </div>
+                    <div id="limits-h-div">
+                        <Limitsh/>
                     </div>
                 </div>
             </div>
