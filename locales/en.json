@@ -243,8 +243,29 @@
     "5.limits.h":" — the minimum and maximum values for \"short\" and its unsigned counterpart, \"unsigned short\".",
     "6.limits.h":" — these constants define the minimum and maximum values for \"int\", which are platform-dependent (typically ranging from \"-2147483648\" to \"2147483647\").",
     "7.limits.h":" — the minimum and maximum values for \"long\" and \"unsigned long\".",
-    "8.limits.h":" — similar constants for \"long long\" and \"unsigned long long\" types, used when higher precision is needed."
+    "8.limits.h":" — similar constants for \"long long\" and \"unsigned long long\" types, used when higher precision is needed.",
 
+    "float.h":" library in C provides various constants that define the properties and precision limits for floating-point types (\"float\", \"double\", and \"long double\"). These constants allow programmers to understand the range and precision limits for each floating-point type on a given system, which is essential for accurate numerical computations and writing portable code.",
+    "flt_radix-function":" — the base (or radix) for the floating-point representation.",
+    "flt_mant_dig&dbl_mant_dig&ldbl_mant_dig-function":" — number of significant digits in the mantissa for \"float\", \"double\", and \"long double\".",
+    "flt_dig&dbl_dig&ldbl_dig-function":" — number of decimal digits that can be represented precisely by \"float\", \"double\", and \"long double\".",
+    "flt_min&dbl_min&ldbl_min-function":" — the minimum positive value for \"float\", \"double\", and \"long double\".",
+    "flt_max&dbl_max&ldbl_max-function":" — the maximum value for \"float\", \"double\", and \"long double\".",
+    "flt_epsilon&dbl_epsilon&ldbl_epsilon-function":" — smallest positive value which, when added to 1.0, gives a result greater than 1.0 for each type.",
+    "flt_min_exp&dbl_min_exp&ldbl_min_exp-function":" — minimum exponent for \"float\", \"double\", and \"long double\".",
+    "flt_max_exp&dbl_max_exp&ldbl_max_exp":" — maximum exponent for \"float\", \"double\", and \"long double\".",
+    "example-code-float.h1":"Below is an example program in C that uses ",
+    "example-code-float.h2":" to display the characteristics of various floating-point data types:",
+    "1.float.h":" — the directive #include <float.h> provides access to constants that define the range and precision of floating-point types.",
+    "2.float.h":" — display the minimum and maximum range values for the \"float\" type.",
+    "3.float.h":" — indicates the number of decimal digits that can be represented without losing precision in \"float\".",
+    "4.float.h":" — the smallest value which, when added to 1.0, results in a number distinct from 1.0 for \"float\".",
+    "5.float.h":" — the minimum and maximum range values for the \"double\" type.",
+    "6.float.h":" — number of decimal digits of precision for the \"double\" type.",
+    "7.float.h":" — analogous to \"FLT_EPSILON\", this is the smallest positive value that, when added to 1.0, changes the result for \"double\".",
+    "8.float.h":" — minimum and maximum range values for the \"long double\" type.",
+    "9.float.h":" — number of significant decimal digits for the \"long double\" type.",
+    "10.float.h":" — smallest positive value for \"long double\" that affects the result when added to 1.0."
 
 }
 

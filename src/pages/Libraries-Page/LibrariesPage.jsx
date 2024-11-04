@@ -13,6 +13,7 @@ import Stringh from "./components/Stringh";
 import Mathh from "./components/Mathh";
 import Ctypeh from "./components/Ctypeh";
 import Limitsh from "./components/Limitsh";
+import Floath from "./components/Floath";
 
 function LibrariesPage() {
     // translator
@@ -37,7 +38,7 @@ function LibrariesPage() {
                     <a href="#math-h-div" className="list-libraries">&lt;math.h&gt;</a>
                     <a href="#ctype-h-div" className="list-libraries">&lt;ctype.h&gt;</a>
                     <a href="#limits-h-div" className="list-libraries">&lt;limits.h&gt;</a>
-                    <a href="#" className="list-libraries">&lt;float.h&gt;</a>
+                    <a href="#float-h-div" className="list-libraries">&lt;float.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;stddef.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;stdint.h&gt;</a>
                     <a href="#" className="list-libraries">&lt;stdbool.h&gt;</a>
@@ -68,6 +69,9 @@ function LibrariesPage() {
                     </div>
                     <div id="limits-h-div">
                         <Limitsh/>
+                    </div>
+                    <div id="float-h-fiv">
+                        <Floath />
                     </div>
                 </div>
             </div>
