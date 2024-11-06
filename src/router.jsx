@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import MainPage from "./pages/Main-Page/Main-Page";
 import StartPage from "./pages/Start-Page/StartPage";
 import CoursePage from './pages/Course-Page/CoursePage.jsx'
@@ -14,8 +14,8 @@ function RouterPages() {
         <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/start" element={<StartPage />} />
-            <Route path="/libraries" element={<LibrariesPage />} />
-            <Route path="/course" element={<CoursePage />} />
+            {/* <Route path="/libraries" element={<LibrariesPage />} /> */}
+            <Route path="/course/*" element={<CoursePage />} />
         </Routes>
     </>
     )

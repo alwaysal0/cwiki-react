@@ -326,8 +326,9 @@
     "name.3.stdbool.h":"Conditional Check with Boolean Values: ",
     "1.stdbool.h":" The variable \"is_even\" is declared as type \"bool\", making it clear that this variable is intended to hold a logical value.",
     "2.stdbool.h":" Boolean variables can be assigned values of \"true\" or \"false\". In this example, \"is_even\" is set to \"true\" if the number is even.",
-    "3.stdbool.h":" The \"if\" condition checks the value of \"is_even\", which allows the program to display the correct message about the number. This enhances readability compared to using \"1\" and \"0\"."
-
+    "3.stdbool.h":" The \"if\" condition checks the value of \"is_even\", which allows the program to display the correct message about the number. This enhances readability compared to using \"1\" and \"0\".",
+    
+    "introduction":"Introduction"
 
 }
 
