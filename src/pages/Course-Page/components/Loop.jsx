@@ -14,7 +14,13 @@ function Loop() {
     const setObservedElementRef1 = useObserver(setInView1);
     return (
         <>
-         <div>Loop</div>
+        <div id="loop-router">
+            <p className="name-of-lesson">{t("introduction")}</p>
+            <p ref={setObservedElementRef1} className={`part-of-lesson ${isInView1 ? "in-view" : ""}`}>{t("loop-router")}</p>
+            <div className="information-of-lesson">
+
+            </div>
+        </div>
         </>
     )
 }

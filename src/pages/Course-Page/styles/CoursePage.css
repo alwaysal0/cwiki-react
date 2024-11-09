@@ -1,0 +1,143 @@
+#course-page{
+    margin-bottom: 5vh;
+}
+#course-head {
+    text-align: center;
+    font-size: 40px;
+    color: #303030;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity .5s ease-in-out, transform .2s ease-in-out;
+}
+#course-head.in-view{
+    opacity: 1;
+    transform: scale(1);
+}
+#course-page-main-box{
+    width: 100vw;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+#list-of-lessons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: max-content;
+    width: 12vw;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
+    border-bottom-right-radius: 15px; border-top-right-radius: 15px;
+
+}
+#course-page-lesson{
+    width: 80vw;
+    min-height: 5vh;
+    height: max-content;
+    margin-right: 5vw;
+    border-radius: 15px;
+    padding-bottom: 4vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
+}
+.lessons a{
+    color: #303030;
+    text-decoration: none;
+}
+.lessons a:hover{
+    text-decoration: underline 1px #303030;
+}
+.name-of-lesson{
+    font-size: 35px;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    margin-bottom: 0;
+}
+.part-of-lesson{
+    font-size: 30px;
+    color: #303030;
+    margin-left: 2vw;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.part-of-lesson.in-view{
+    opacity: 1;
+}
+
+.chapter-description{
+    margin-left: 2vw;
+    font-size: 18px;
+    width: 90%;
+}
+.prechapter-head{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+.prechapter-description{
+    margin-left: 2vw;
+    font-size: 18px;
+    width: 90%;
+}
+.func-description{
+    color: black;
+    font-weight: 500;
+    line-height: 45px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 5px;
+}
+.code{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dynamic */
+
+#integer-types-div{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#integer-types-div.in-view{
+    opacity: 1;
+}
+#floating-point-types-div{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#floating-point-types-div.in-view{
+    opacity: 1;
+}
+#character-types-div{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#character-types-div.in-view{
+    opacity: 1;
+}
+#special-data-types-div{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#special-data-types-div.in-view{
+    opacity: 1;
+}
+#summary-div{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#summary-div.in-view{
+    opacity: 1;
+}
+.observer-div-course{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.observer-div-course.in-view{
+    opacity: 1;
+}

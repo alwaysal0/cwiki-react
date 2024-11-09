@@ -328,7 +328,41 @@
     "2.stdbool.h":" Boolean variables can be assigned values of \"true\" or \"false\". In this example, \"is_even\" is set to \"true\" if the number is even.",
     "3.stdbool.h":" The \"if\" condition checks the value of \"is_even\", which allows the program to display the correct message about the number. This enhances readability compared to using \"1\" and \"0\".",
     
-    "introduction":"Introduction"
+    "introduction":"Introduction",
 
+    "data-types-router":"Data Types",
+
+    "data-types":"In the C programming language, data types define what values a variable can hold and what operations can be performed on it. The primary categories include integer types, floating-point types, character types, and special types.",
+    "integer-types":"Integer Types",
+    "integer-types-description":"Integer types are used to store whole numbers (without a decimal point).",
+    "int-description":" the standard integer type, typically 4 bytes, though size can vary by system.",
+    "short-description":" used for smaller integer values, takes up less memory.",
+    "long-description":" for larger integer values.",
+    "unsigned-description":" stores only positive values (e.g., \"unsigned int\").",
+    "floating-point-types":"Floating-Point Types",
+    "floating-point-types-description":"Floating-point types are used to store decimal numbers (numbers with a fractional part).",
+    "float-description":" single-precision, typically 4 bytes with about 7 decimal places of precision.",
+    "double-description":" double-precision, usually 8 bytes with about 15 decimal places.",
+    "long-double-description":" for even higher precision (size depends on the system).",
+    "character-types":"Character Types",
+    "character-types-description":"The char data type is used to store single characters, like letters and digits.",
+    "char-description":" usually 1 byte, stores characters and small integer values.",
+    "unsigned-and-signed-char-description":" used for characters with specific ranges, allowing positive or negative values.",
+    "special-data-types":"Special Data Types",
+    "void-description":" represents the absence of a value, often used for functions that do not return anything.",
+    "bool-description":" stores boolean values \"true\" (1) or \"false\" (0).",
+    "summary-data-types":"Summary",
+    "summary-data-types-description":"Data types in C define what values a variable can hold and which operations are possible. For instance, \"int\", \"float\", and \"double\" are used for numerical operations, \"char\" for characters, and \"_Bool\" for boolean values.",
+
+    "hello-world-router":"\"Hello World\"",
+
+    "hello-world-":"Here is the simple \"Hello, World!\" program in C:",
+    "course-stdio.h":" - this line includes the standard input/output library, which provides the \"printf\" function used for output.",
+    "course-int-main":" — the main function of the program where execution starts.",
+    "course-printf-helloworld":" — this function prints the string \"Hello, World!\" to the screen. The \"\n\" is a special character that creates a new line after the message.",
+    "course-return-0":" — this statement ends the \"main\" function and returns 0 to the operating system, indicating that the program completed successfully.",
+    "output":"Output",
+    "loop-router":"Loops"
+    
 }
 

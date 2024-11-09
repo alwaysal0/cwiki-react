@@ -37,7 +37,7 @@
     background-color: rgb(243, 243, 243);
     width: 12vw; height: max-content;
     border-bottom-right-radius: 15px; border-top-right-radius: 15px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.251);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.251);    
     padding: 10px;
     position: sticky;
     top: 10vh;

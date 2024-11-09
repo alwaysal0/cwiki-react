@@ -1,5 +1,5 @@
 import React from "react";
-import './CoursePage.css';
+import './styles/CoursePage.css';
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import useObserver from "../../general components/ObserverFunction";
@@ -24,9 +24,9 @@ function CoursePage() {
                 <div id="list-of-lessons">
                     <p>{t("introduction")}</p>
                     <ul>
-                        <li className="lessons"><Link to='/course/data-types'>типы данных в Си</Link></li>
-                        <li className="lessons"><Link to='/course/hello-world-course-page'>Hello World</Link></li>
-                        <li className="lessons"><Link to='/course/loop'>работа с циклами</Link></li>
+                        <li className="lessons"><Link to='/course/data-types'>{t("data-types-router")}</Link></li>
+                        <li className="lessons"><Link to='/course/hello-world-course-page'>{t("hello-world-router")}</Link></li>
+                        <li className="lessons"><Link to='/course/loop'>{t("loop-router")}</Link></li>
                         <li className="lessons">123</li>
                         <li className="lessons">321</li>
                     </ul>
