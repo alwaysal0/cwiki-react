@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stdlibh() {
     // translator
@@ -11,6 +12,39 @@ function Stdlibh() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code =`
+    #include <stdio.h>   // Include the stdio.h library for input/output
+    #include <stdlib.h>  // Include the stdlib.h library for utility functions
+
+    int main() {
+        int *array; // Declare a pointer for an integer array
+        int size;
+
+        // Prompt the user for the size of the array
+        printf("Enter the size of the array: ");
+        scanf("%d", &size);
+
+        // Dynamically allocate memory for the array
+        array = (int *)malloc(size * sizeof(int)); // Allocate memory for 'size' integers
+
+        // Check if memory allocation was successful
+        if (array == NULL) {
+            printf("Memory allocation failed!\\n");
+            return 1; // Exit the program with an error status
+        }
+
+        // Initialize and print the array
+        for (int i = 0; i < size; i++) {
+            array[i] = i * 2; // Fill the array with even numbers
+            printf("array[%d] = %d\\n", i, array[i]); // Output the value
+        }
+
+        // Free the allocated memory
+        free(array); // Release the allocated memory
+
+        return 0; // End of the program
+    }
+        `
     return(
         <>
         <div className="libraries-div" id="stdlib-h-div">
@@ -26,8 +60,8 @@ function Stdlibh() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-stdlib.h1")}<span className="libraries-span">&lt;stdlib.h&gt;</span>{t("example-code-stdlib.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="7d561359e7514b234b3b9ac67766cd6d" />
+            <div id="code">
+                <CodeHighlight code={code}/>
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

@@ -27,8 +27,7 @@ function CoursePage() {
                         <li className="lessons"><Link to='/course/data-types'>{t("data-types-router")}</Link></li>
                         <li className="lessons"><Link to='/course/hello-world-course-page'>{t("hello-world-router")}</Link></li>
                         <li className="lessons"><Link to='/course/loop'>{t("loop-router")}</Link></li>
-                        <li className="lessons">123</li>
-                        <li className="lessons">321</li>
+                        <li className="lessons"><Link to='/course/arrays'>{t("arrays")}</Link></li>
                     </ul>
                 </div>
                 <div id="course-page-lesson">

@@ -18,22 +18,26 @@
     height: max-content;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 #list-of-lessons{
-    position: absolute;
-    top: 0;
+    position: sticky;
+    top: 5vw;
     left: 0;
     height: max-content;
     width: 12vw;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
     border-bottom-right-radius: 15px; border-top-right-radius: 15px;
-
+}
+#list-of-lessons p{
+    color: #303030;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10px;
 }
 #course-page-lesson{
     width: 80vw;
-    min-height: 5vh;
     height: max-content;
     margin-right: 5vw;
     border-radius: 15px;
@@ -43,6 +47,9 @@
 .lessons a{
     color: #303030;
     text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
 }
 .lessons a:hover{
     text-decoration: underline 1px #303030;
@@ -90,6 +97,20 @@
     background-color: rgb(241, 241, 241);
     border-radius: 5px;
     padding: 5px;
+}
+.text-description{
+    color: #303030;
+    font-weight: 500;
+    line-height: 45px;
+    font-size: 20px;
+}
+.explanation-list{
+    font-size: 19px;
+    line-height: 45px;
+}
+.head-tag{
+    font-size: 30px;
+    margin-left: 1vw;
 }
 .code{
     width: 70vw;
@@ -140,4 +161,113 @@
 }
 .observer-div-course.in-view{
     opacity: 1;
+}
+
+#for-loop{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#for-loop.in-view{
+    opacity: 1;
+}
+#while-loop{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#while-loop.in-view{
+    opacity: 1;
+}
+#do_while-loop{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#do_while-loop.in-view{
+    opacity: 1;
+}
+#arrays-main{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#arrays-main.in-view{
+    opacity: 1;
+}
+#declare-and-initializing{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#declare-and-initializing.in-view{
+    opacity: 1;
+}
+#initializing-an-array{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#initializing-an-array.in-view{
+    opacity: 1;
+}
+#accessing-array-elements{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#accessing-array-elements.in-view{
+    opacity: 1;
+}
+#modifying-array-values{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#modifying-array-values.in-view{
+    opacity: 1;
+}
+#using-loops-with-arrays{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#using-loops-with-arrays.in-view{
+    opacity: 1;
+}
+#character-arrays{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#character-arrays.in-view{
+    opacity: 1;
+}
+#finding-maximum-in-an-array{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#finding-maximum-in-an-array.in-view{
+    opacity: 1;
+}
+
+@media (max-width: 750px) {
+    #course-page-main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #list-of-lessons{
+        position: relative;
+        height: max-content;
+        width: 50vw;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
+        border-radius: 15px;
+    }
+    #list-of-lessons p{
+        text-align: center;
+    }
+    #course-page-lesson{
+        margin-top: 20vh;
+    }
+    .name-of-lesson{
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    #course-page-lesson{
+        margin-top: 5vh;
+    }
 }

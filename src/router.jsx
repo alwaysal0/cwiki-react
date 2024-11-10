@@ -14,7 +14,7 @@ function RouterPages() {
         <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/start" element={<StartPage />} />
-            {/* <Route path="/libraries" element={<LibrariesPage />} /> */}
+            <Route path="/libraries" element={<LibrariesPage />} />
             <Route path="/course/*" element={<CoursePage />} />
         </Routes>
     </>

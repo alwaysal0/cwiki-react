@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stringh() {
     // translator
@@ -11,6 +12,46 @@ function Stringh() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code = `
+    #include <stdio.h>      // Include the stdio.h library for input/output
+    #include <string.h>     // Include the string.h library for string functions
+
+    int main() {
+        char str1[50]; // Declare an array for the first string
+        char str2[50]; // Declare an array for the second string
+
+        // Prompt the user for the first string
+        printf("Enter the first string: ");
+        fgets(str1, sizeof(str1), stdin); // Read a string from standard input
+
+        // Prompt the user for the second string
+        printf("Enter the second string: ");
+        fgets(str2, sizeof(str2), stdin); // Read a string from standard input
+
+        // Remove the newline character if it exists
+        str1[strcspn(str1, "\\n")] = '\\0'; 
+        str2[strcspn(str2, "\\n")] = '\\0'; 
+
+        // Compare the strings
+        int result = strcmp(str1, str2); // Compare str1 and str2
+        if (result == 0) {
+            printf("The strings are equal.\\n");
+        } else if (result < 0) {
+            printf("The first string is less than the second.\\n");
+        } else {
+            printf("The first string is greater than the second.\\n");
+        }
+
+        // Concatenate the strings
+        strcat(str1, str2); // Append str2 to str1
+        printf("Result of concatenation: %s\\n", str1); // Output the result
+
+        // Output the length of the first string
+        printf("Length of the first string: %lu\\n", strlen(str1)); // Output the length
+
+        return 0; // End of the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="string-h-div">
@@ -28,8 +69,8 @@ function Stringh() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-string.h1")}<span className="libraries-span">&lt;string.h&gt;</span>{t("example-code-string.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="c0a87df94ec2999380654ac85e35af60" />
+            <div id="code">
+                <CodeHighlight code={code} />
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

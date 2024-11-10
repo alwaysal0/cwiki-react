@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stdbool() {
     // translator
@@ -11,6 +12,31 @@ function Stdbool() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code=`
+    #include <stdio.h>     // Include stdio.h for input/output
+    #include <stdbool.h>   // Include stdbool.h for working with boolean values
+
+    int main() {
+        // Define a boolean variable
+        bool is_even = false;   // Initially set to false
+
+        int number = 4;
+
+        // Check if the number is even
+        if (number % 2 == 0) {
+            is_even = true;    // Set is_even to true if the number is even
+        }
+
+        // Output the result
+        if (is_even) {
+            printf("The number %d is even.\\n", number);
+        } else {
+            printf("The number %d is odd.\\n", number);
+        }
+
+        return 0;  // End the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="stdbool-h-div">
@@ -36,8 +62,8 @@ function Stdbool() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-stdbool.h1")}<span className="libraries-span">&lt;stdbool.h&gt;</span>{t("example-code-stdbool.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="e53f1a73eeef1af08a7448689896659a" />
+            <div id="code">
+                <CodeHighlight code={code}/>
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

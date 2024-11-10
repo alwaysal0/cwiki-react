@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stdint() {
     // translator
@@ -11,6 +12,32 @@ function Stdint() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code=`
+    #include <stdio.h>    // Include stdio.h for input/output
+    #include <stdint.h>   // Include stdint.h for fixed-width integer types
+
+    int main() {
+        // Using exact-width integer types
+        int8_t small_number = -100;      // 8-bit signed integer
+        uint16_t medium_number = 50000;  // 16-bit unsigned integer
+
+        // Using minimum-width integer types
+        int_least32_t large_number = 1000000;  // At least 32-bit signed integer
+
+        // Using maximum-width integer types
+        intmax_t max_signed = INTMAX_MAX;
+        uintmax_t max_unsigned = UINTMAX_MAX;
+
+        // Display the values and limits
+        printf("small_number (int8_t): %d\\n", small_number);
+        printf("medium_number (uint16_t): %u\\n", medium_number);
+        printf("large_number (int_least32_t): %d\\n", large_number);
+        printf("Max signed integer (intmax_t): %jd\\n", max_signed);
+        printf("Max unsigned integer (uintmax_t): %ju\\n", max_unsigned);
+
+        return 0; // End the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="stdint-h-div">
@@ -62,8 +89,8 @@ function Stdint() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-stdint.h1")}<span className="libraries-span">&lt;stdint.h&gt;</span>{t("example-code-stdint.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="7ef7d1b92cdc918efaa5029d19bc7e6c" />
+            <div id="code">
+                <CodeHighlight code={code}/>
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

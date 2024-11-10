@@ -47,7 +47,7 @@ function Header() {
                   <Link to='/libraries'>{t("libraries")}</Link>
                 </div>
                 <div className="rightButtons">
-                  <Link to='/course'>{t("course")}</Link>
+                  <Link to='/course/data-types'>{t("course")}</Link>
                 </div>
                 <div onClick={toggleLanguageList}id='div-of-language'>
                   <div id='language'><span>{i18n.language.toUpperCase()}</span></div>

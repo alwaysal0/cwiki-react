@@ -46,7 +46,7 @@ function HelloWorldCoursePage() {
                         <li><span className="func-description">printf("Hello, World!\n");</span>{t("course-printf-helloworld")}</li>
                         <li><span className="func-description">return 0;</span>{t("course-return-0")}</li>
                     </ul>
-                    <p className="chapter-description">{t("output")}</p>
+                    <p className="prechapter-head">{t("output")}</p>
                     <div className="code"><CodeHighlight code={output} /></div>
                 </div>
             </div>

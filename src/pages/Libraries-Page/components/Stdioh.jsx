@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stdioh() {
     // translator
@@ -11,6 +12,22 @@ function Stdioh() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code = `
+    #include <stdio.h> // Include the stdio.h library
+
+    int main() {
+        int number; // Declare a variable to hold an integer
+
+        // Prompt the user for a number
+        printf("Enter an integer: "); 
+        scanf("%d", &number); // Read the number from the keyboard and store it in the variable
+
+        // Output the entered number
+        printf("You entered: %d\\n", number); 
+
+        return 0; // End of the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="stdio-h-div">
@@ -26,8 +43,8 @@ function Stdioh() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-stdio.h1")}<span className="libraries-span">&lt;stdio.h&gt;</span>{t("example-code-stdio.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="3666817e35b24f904c918d59383db5dc" />
+            <div id="code">
+                <CodeHighlight code={code} />
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

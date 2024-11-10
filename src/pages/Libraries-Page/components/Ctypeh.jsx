@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Ctypeh() {
     // translator
@@ -11,6 +12,38 @@ function Ctypeh() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code =`
+    #include <stdio.h>   // Include stdio.h for input/output
+    #include <ctype.h>   // Include ctype.h for character functions
+
+    int main() {
+        char ch;
+
+        // Prompt the user for a character
+        printf("Enter a character: ");
+        scanf("%c", &ch); // Read a character from standard input
+
+        // Check if it is a letter or digit
+        if (isalpha(ch)) {
+            printf("%c is a letter.\\n", ch);
+        } else if (isdigit(ch)) {
+            printf("%c is a digit.\\n", ch);
+        } else {
+            printf("%c is neither a letter nor a digit.\\n", ch);
+        }
+
+        // Convert case if it's a letter
+        if (isalpha(ch)) { // Check if the character is a letter
+            if (islower(ch)) {
+                printf("Uppercase: %c\\n", toupper(ch)); // Convert to uppercase
+            } else {
+                printf("Lowercase: %c\\n", tolower(ch)); // Convert to lowercase
+            }
+        }
+
+        return 0; // End of the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="ctype-h-div">
@@ -29,8 +62,8 @@ function Ctypeh() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-ctype.h1")}<span className="libraries-span">&lt;ctype.h&gt;</span>{t("example-code-ctype.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="24a86acb95a17090fa6640f0f13defb1" />
+            <div id="code">
+                <CodeHighlight code={code}/>
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

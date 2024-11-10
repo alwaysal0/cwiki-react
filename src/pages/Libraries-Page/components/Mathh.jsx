@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Mathh() {
     // translator
@@ -11,6 +12,49 @@ function Mathh() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code = `
+    #include <stdio.h>   // Include the stdio.h library for input/output
+    #include <math.h>    // Include the math.h library for mathematical functions
+
+    int main() {
+        double num, power, angle;
+
+        // Prompt the user for a number
+        printf("Enter a number: ");
+        scanf("%lf", &num); // Read a double value from standard input
+
+        // Calculate the square root
+        printf("Square root of %.2f: %.2f\\n", num, sqrt(num)); // Output the square root
+
+        // Prompt the user for the power
+        printf("Enter a power: ");
+        scanf("%lf", &power); // Read a double value for the power
+
+        // Calculate the power
+        printf("%.2f raised to the power of %.2f: %.2f\\n", num, power, pow(num, power)); // Output the result of power calculation
+
+        // Prompt the user for an angle in radians
+        printf("Enter an angle in radians: ");
+        scanf("%lf", &angle); // Read the angle in radians
+
+        // Calculate trigonometric functions
+        printf("Sine of %.2f radians: %.2f\\n", angle, sin(angle)); // Output the sine
+        printf("Cosine of %.2f radians: %.2f\\n", angle, cos(angle)); // Output the cosine
+        printf("Tangent of %.2f radians: %.2f\\n", angle, tan(angle)); // Output the tangent
+
+        // Output the absolute value
+        printf("Absolute value of %.2f: %.2f\\n", num, fabs(num)); // Output the absolute value
+
+        // Calculate and output the natural logarithm
+        if (num > 0) {
+            printf("Natural logarithm of %.2f: %.2f\\n", num, log(num)); // Output the natural logarithm
+        } else {
+            printf("Natural logarithm is not defined for non-positive values.\\n");
+        }
+
+        return 0; // End of the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="math-h-div">
@@ -32,8 +76,8 @@ function Mathh() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-math.h1")}<span className="libraries-span">&lt;math.h&gt;</span>{t("example-code-math.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="df4306fe65692f0de02c6c32be7c568f" />
+            <div id="code">
+                <CodeHighlight code={code} />
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

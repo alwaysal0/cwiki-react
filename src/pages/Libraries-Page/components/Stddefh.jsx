@@ -3,6 +3,7 @@ import '../styles/LibrariesPage.css'
 import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import CodeHighlight from "../../../CodeHighlight";
 
 function Stddef() {
     // translator
@@ -11,6 +12,38 @@ function Stddef() {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language); // функция для смены языка
     };
+    const code=`
+    #include <stdio.h>     // Include stdio.h for input/output
+    #include <stddef.h>    // Include stddef.h for standard type definitions
+
+    struct MyStruct {
+        int id;
+        double value;
+        char label;
+    };
+
+    int main() {
+        // Example of using NULL
+        int *p = NULL;  // Pointer p initialized to NULL
+        if (p == NULL) {
+            printf("Pointer p is NULL\\n");
+        }
+
+        // Example of using size_t
+        size_t array_size = 5;
+        printf("Array size: %zu\\n", array_size);
+
+        // Example of using ptrdiff_t
+        int arr[10];
+        ptrdiff_t diff = &arr[5] - &arr[0];
+        printf("Pointer difference: %td elements\\n", diff);
+
+        // Example of using offsetof
+        printf("Offset of 'value' in MyStruct: %zu bytes\\n", offsetof(struct MyStruct, value));
+
+        return 0; // End the program
+    }
+    `
     return(
         <>
         <div className="libraries-div" id="stddef-h-div">
@@ -25,8 +58,8 @@ function Stddef() {
             </ul>
             <p className="text-of-libraries-right example-code">{t("example-code")}</p>
             <p className="text-of-libraries-right">{t("example-code-stddef.h1")}<span className="libraries-span">&lt;stddef.h&gt;</span>{t("example-code-stddef.h2")}</p>
-            <div id="gist-embed">
-                <GistEmbed gistId="7a98b309d950899cb4ff52e1421c3cc1" />
+            <div id="code">
+                <CodeHighlight code={code}/>
             </div>
             <p className="text-of-libraries-right example-code">{t("explanation-of-the-code")}</p>
             <ol>

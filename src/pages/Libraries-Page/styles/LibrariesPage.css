@@ -145,82 +145,26 @@
     color: #00599C;
     font-size: 17px;
 }
-
-/* animated
-#definition{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
+@media (max-width: 750px) {
+    #standart-libraries-main-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #libraries-left{
+        position: relative;
+        border-radius: 15px;
+        width: 40vw;
+        text-align: center;
+    }
+    #head-of-list-libraries{
+        font-size: 35px;
+    }
+    .list-libraries{
+        font-size: 30px;
+    }
+    #libraries-right{
+        margin-top: 20vh;
+        width: 80vw;
+    }
 }
-#definition.in-view{
-    opacity: 1;
-}
-#stdio-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#stdio-h-div.in-view{
-    opacity: 1;
-}
-#stdlib-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#stdlib-h-div.in-view{
-    opacity: 1;
-}
-#string-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#string-h-div.in-view{
-    opacity: 1;
-}
-#math-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#math-h-div.in-view{
-    opacity: 1;
-}
-#ctype-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#ctype-h-div.in-view{
-    opacity: 1;
-}
-#limits-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#limits-h-div.in-view{
-    opacity: 1;
-}
-#float-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#float-h-div.in-view{
-    opacity: 1;
-}
-#stddef-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#stddef-h-div.in-view{
-    opacity: 1;
-}
-#stdint-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#stdint-h-div.in-view{
-    opacity: 1;
-}
-#stdbool-h-div{
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-#stdbool-h-div.in-view{
-    opacity: 1;
-} */
