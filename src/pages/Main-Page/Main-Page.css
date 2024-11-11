@@ -12,7 +12,6 @@
     margin-bottom: 120px;
 }
 #information-about-C{
-    background-image: url("./c-animation2/frame1.png");
     width: 100vw;
     height: 100vh;
     transition: background-image .05s ease-in-out;

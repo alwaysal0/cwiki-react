@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/LibrariesPage.css'
-import GistEmbed from "../../../GistEmbed"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import CodeHighlight from "../../../CodeHighlight";
